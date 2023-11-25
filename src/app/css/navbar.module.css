@@ -25,4 +25,31 @@
     border: none;
     background-color: #E0EEF3;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover{
+    background-color: #f1f8fa;
+}
+
+.ddbutton{
+    border-radius: 10px ;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.dropdown{
+    position: fixed;
+    background: rgba(184, 168, 255, 0.55);
+    backdrop-filter: blur(8.050000190734863px);
+    border-radius: 20px;
+    padding: 0.5em;
+    margin-top: 6.5em;
+    margin-left: 2em;
+    z-index: 3;
+    width: 20em;
 }
