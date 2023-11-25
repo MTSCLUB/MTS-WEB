@@ -2,8 +2,8 @@
 
 import Link from 'next/link'
 import styles from '../css/navbar.module.css'
-import { HiMiniBars3 } from "react-icons/hi2";
-import { HiOutlineXMark } from "react-icons/hi2";
+import { TiThMenu } from "react-icons/ti";
+import { FaTimes } from "react-icons/fa";
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -16,8 +16,8 @@ const Navbar = () => {
     return (
         <div>
             <nav className={styles.navbar}>
-                <button className={styles.button} onClick={toggleDropdown}>{mostrarDropdown ? <HiOutlineXMark size={25}/> : < HiMiniBars3 size={25}/>}</button>
-                <button className={styles.button}>Registrarme</button>
+                <button className={styles.button} onClick={toggleDropdown}>{mostrarDropdown ? <FaTimes size={25}/> : < TiThMenu size={25}/>}</button>
+                <Link href="/signup" className={styles.button}>Registrarme</Link>
             </nav>
 
             <div className={`${styles.dropdown} ${mostrarDropdown ? '' : styles.hide}`}>
