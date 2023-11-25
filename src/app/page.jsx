@@ -1,8 +1,13 @@
-import styles from './css/page.module.css'
-import './css/page.module.css'
+// Componentes
 import Navbar from './ui/Navbar'
+
+// Estilos
+import styles from './css/home.module.css'
+import './css/home.module.css'
 import 'tailwindcss/tailwind.css'
 import './css/globals.css'
+
+import Link from 'next/link'
 
 
 export default function Home() {
