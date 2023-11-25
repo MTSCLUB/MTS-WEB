@@ -14,10 +14,10 @@ const Signupform = () => {
         };
 
         return (
-            <div className=''>
+            <div className={styles.input}>
                 <input
                     type={showPassword ? 'text' : 'password'}
-                    placeholder='Contraseña' className={styles.input}
+                    placeholder='Contraseña' 
                 />
                 <button type="button" onClick={togglePasswordVisibility}>
                     {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -27,16 +27,17 @@ const Signupform = () => {
     };
 
     return (
-        <div className={styles.form}>
+        <div className={styles.container}>
             <p className={styles.title}>Crear Cuenta</p>
-            <form action="submit">
+            <form action="submit" className={styles.form}>
                 <input className={styles.input} type="email" placeholder='E-mail' />
                 <PasswordInput  />
                 <PasswordInput />
             </form>
-            <div className="buttons">
-                <button className="button"><FcGoogle /> Google</button>
-                <button className="button">Continuar</button>
+            <div className={styles.buttons}>
+                <button className={styles.button}> Google</button>
+
+                <button className={`${styles.button} ${styles.continuar}`}>Continuar</button>
                 <p>¿Ya tienes una cuenta? <Link href="/" className='link'>Iniciar Sesión</Link></p>
             </div>
         </div>
