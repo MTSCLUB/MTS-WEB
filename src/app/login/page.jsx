@@ -12,7 +12,7 @@ export default function signup(){
     return (
         <div>
             <Navbar />
-            <Signupform signup={true}/>
+            <Signupform signup={false}/>
         </div>
     )
 }
