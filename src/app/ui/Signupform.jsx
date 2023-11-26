@@ -38,8 +38,8 @@ const Signupform = () => {
                 <button className={styles.button}> Google</button>
 
                 <button className={`${styles.button} ${styles.continuar}`}>Continuar</button>
-                <p>¿Ya tienes una cuenta? <Link href="/" className='link'>Iniciar Sesión</Link></p>
             </div>
+            <p>¿Ya tienes una cuenta? <Link href="/" className='link'>Iniciar Sesión</Link></p>
         </div>
     );
 };
